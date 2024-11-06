@@ -21,18 +21,18 @@ import { useRouter } from "next/router";
 
 const lessonProblem1 = {
   type: "SELECT_1_OF_3",
-  question: `Which one of these is "the apple"?`,
+  question: `أي واحد من هؤلاء"التفاحة"?`,
   answers: [
-    { icon: <AppleSvg />, name: "la manzana" },
-    { icon: <BoySvg />, name: "el niño" },
-    { icon: <WomanSvg />, name: "la mujer" },
+    { icon: <AppleSvg />, name: "Apple" },
+    { icon: <BoySvg />, name: "Boy" },
+    { icon: <WomanSvg />, name: "woman" },
   ],
   correctAnswer: 0,
 } as const;
 
 const lessonProblem2 = {
-  type: "WRITE_IN_ENGLISH",
-  question: "El niño",
+  type: "اكتب بالانجليزية",
+  question: "ماء",
   answerTiles: ["woman", "milk", "water", "I", "The", "boy"],
   correctAnswer: [4, 5],
 } as const;
@@ -563,7 +563,7 @@ const ProblemWriteInEnglish = ({
         </div>
         <section className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24">
           <h1 className="mb-2 text-2xl font-bold sm:text-3xl">
-            Write this in English
+            اكتب هذا باللغة الإنجليزية
           </h1>
 
           <div className="w-full">
