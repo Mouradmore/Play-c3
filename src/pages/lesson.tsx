@@ -37,7 +37,7 @@ const lessonProblem2 = {
   correctAnswer: [3, 5],
 } as const;
 
-const lessonProblem1 = {
+const lessonProblem3 = {
   type: "SELECT_1_OF_3",
   question: `Which one of these is "cow"?`,
   answers: [
@@ -48,7 +48,7 @@ const lessonProblem1 = {
   correctAnswer: 1,
 } as const;
 
-const lessonProblem2 = {
+const lessonProblem4 = {
   type: "WRITE_IN_ENGLISH",
   question: "رجل",
   answerTiles: ["woman", "milk", "man", "The", "Car", "boy"],
