@@ -7,12 +7,12 @@ const languages = [
     viewBox: "0 2178 82 66",
     code: "ar",
   },
-  { name: "Bengali", nativeName: "বাংলা", viewBox: "0 1914 82 66", code: "bn" },
+  /*{ name: "Bengali", nativeName: "বাংলা", viewBox: "0 1914 82 66", code: "bn" },
   { name: "Czech", nativeName: "Čeština", viewBox: "0 1848 82 66", code: "cs" },
   { name: "German", nativeName: "Deutsch", viewBox: "0 198 82 66", code: "de" },
-  { name: "Greek", nativeName: "Ελληνικά", viewBox: "0 924 82 66", code: "el" },
+  { name: "Greek", nativeName: "Ελληνικά", viewBox: "0 924 82 66", code: "el" },*/
   { name: "English", nativeName: "English", viewBox: "0 0 82 66", code: "en" },
-  { name: "Spanish", nativeName: "Español", viewBox: "0 66 82 66", code: "es" },
+  /*{ name: "Spanish", nativeName: "Español", viewBox: "0 66 82 66", code: "es" },*/
   {
     name: "French",
     nativeName: "Français",
