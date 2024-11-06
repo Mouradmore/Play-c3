@@ -95,7 +95,7 @@ const Lesson: NextPage = () => {
 
   const problem = lessonProblems[lessonProblem] ?? lessonProblem1;
 
-  const totalCorrectAnswersNeeded = 2;
+  const totalCorrectAnswersNeeded = 4;
 
   const [isStartingLesson, setIsStartingLesson] = useState(true);
   const hearts =
