@@ -23,18 +23,18 @@ const lessonProblem1 = {
   type: "SELECT_1_OF_3",
   question: `Which one of these is "the apple"?`,
   answers: [
-    { icon: <AppleSvg />, name: "la manzana" },
-    { icon: <BoySvg />, name: "el niño" },
-    { icon: <WomanSvg />, name: "la mujer" },
+    { icon: <AppleSvg />, name: "التفاحة" },
+    { icon: <BoySvg />, name: "الصبي" },
+    { icon: <WomanSvg />, name: "المرأة" },
   ],
   correctAnswer: 0,
 } as const;
 
 const lessonProblem2 = {
   type: "WRITE_IN_ENGLISH",
-  question: "El niño",
-  answerTiles: ["woman", "milk", "water", "I", "The", "boy"],
-  correctAnswer: [4, 5],
+  question: "الصبي",
+  answerTiles: ["woman", "milk", "water", "The", "I", "boy"],
+  correctAnswer: [3, 5],
 } as const;
 
 const lessonProblems = [lessonProblem1, lessonProblem2];
