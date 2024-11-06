@@ -37,26 +37,10 @@ const lessonProblem2 = {
   correctAnswer: [3, 5],
 } as const;
 
-const lessonProblem3 = {
-  type: "SELECT_1_OF_3",
-  question: `Which one of these is "cow"?`,
-  answers: [
-    { icon: <AppleSvg />, name: "الصبي" },
-    { icon: <BoySvg />, name: "بقرة" },
-    { icon: <WomanSvg />, name: "المرأة" },
-  ],
-  correctAnswer: 1,
-} as const;
-
-const lessonProblem4 = {
-  type: "WRITE_IN_ENGLISH",
-  question: "رجل",
-  answerTiles: ["woman", "a", "man", "The", "Car", "boy"],
-  correctAnswer: [1,2],
-} as const;
 
 
-const lessonProblems = [lessonProblem1, lessonProblem2, lessonProblem3, lessonProblem4];
+
+const lessonProblems = [lessonProblem1, lessonProblem2];
 
 const numbersEqual = (a: readonly number[], b: readonly number[]): boolean => {
   return a.length === b.length && a.every((_, i) => a[i] === b[i]);
@@ -95,7 +79,7 @@ const Lesson: NextPage = () => {
 
   const problem = lessonProblems[lessonProblem] ?? lessonProblem1;
 
-  const totalCorrectAnswersNeeded = 4;
+  const totalCorrectAnswersNeeded = 2;
 
   const [isStartingLesson, setIsStartingLesson] = useState(true);
   const hearts =
