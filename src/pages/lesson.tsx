@@ -37,10 +37,15 @@ const lessonProblem2 = {
   correctAnswer: [3, 5],
 } as const;
 
+const lessonProblem3 = {
+  type: "WRITE_IN_ENGLISH",
+  question: "الصبي",
+  answerTiles: ["woman", "milk", "water", "I", "The", "boy"],
+  correctAnswer: [4, 5],
+} as const;
 
 
-
-const lessonProblems = [lessonProblem1, lessonProblem2];
+const lessonProblems = [lessonProblem1, lessonProblem2, lessonProblem3];
 
 const numbersEqual = (a: readonly number[], b: readonly number[]): boolean => {
   return a.length === b.length && a.every((_, i) => a[i] === b[i]);
@@ -79,7 +84,7 @@ const Lesson: NextPage = () => {
 
   const problem = lessonProblems[lessonProblem] ?? lessonProblem1;
 
-  const totalCorrectAnswersNeeded = 2;
+  const totalCorrectAnswersNeeded = 3;
 
   const [isStartingLesson, setIsStartingLesson] = useState(true);
   const hearts =
