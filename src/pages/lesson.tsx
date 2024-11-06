@@ -19,16 +19,7 @@ import womanPng from "../../public/woman.png";
 import { useBoundStore } from "~/hooks/useBoundStore";
 import { useRouter } from "next/router";
 
-const lessonProblem1 = {
-  type: "SELECT_1_OF_3",
-  question: `Which one of these is "the apple"?`,
-  answers: [
-    { icon: <AppleSvg />, name: "التفاحة" },
-    { icon: <BoySvg />, name: "الصبي" },
-    { icon: <WomanSvg />, name: "المرأة" },
-  ],
-  correctAnswer: 0,
-} as const;
+
 
 const lessonProblem2 = {
   type: "WRITE_IN_ENGLISH",
@@ -84,7 +75,7 @@ const Lesson: NextPage = () => {
 
   const problem = lessonProblems[lessonProblem] ?? lessonProblem1;
 
-  const totalCorrectAnswersNeeded = 3;
+  const totalCorrectAnswersNeeded = 2;
 
   const [isStartingLesson, setIsStartingLesson] = useState(true);
   const hearts =
