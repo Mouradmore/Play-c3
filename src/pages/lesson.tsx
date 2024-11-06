@@ -51,12 +51,12 @@ const lessonProblem3 = {
 const lessonProblem4 = {
   type: "WRITE_IN_ENGLISH",
   question: "رجل",
-  answerTiles: ["woman", "milk", "man", "The", "Car", "boy"],
-  correctAnswer: 2,
+  answerTiles: ["woman", "a", "man", "The", "Car", "boy"],
+  correctAnswer: [1,2],
 } as const;
 
 
-const lessonProblems = [lessonProblem1, lessonProblem2];
+const lessonProblems = [lessonProblem1, lessonProblem2, lessonProblem3, lessonProblem4];
 
 const numbersEqual = (a: readonly number[], b: readonly number[]): boolean => {
   return a.length === b.length && a.every((_, i) => a[i] === b[i]);
