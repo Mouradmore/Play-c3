@@ -30,6 +30,17 @@ const lessonProblem1 = {
   correctAnswer: 0,
 } as const;
 
+const lessonProblem1 = {
+  type: "SELECT_1_OF_3",
+  question: `Which one of these is "the apple"?`,
+  answers: [
+    { icon: <AppleSvg />, name: "la manzana" },
+    { icon: <BoySvg />, name: "el niño" },
+    { icon: <WomanSvg />, name: "la mujer" },
+  ],
+  correctAnswer: 1,
+} as const;  
+
 const lessonProblem2 = {
   type: "WRITE_IN_ENGLISH",
   question: "El niño",
@@ -37,7 +48,7 @@ const lessonProblem2 = {
   correctAnswer: [4, 5],
 } as const;
 
-const lessonProblems = [lessonProblem1, lessonProblem2];
+const lessonProblems = [lessonProblem1, lessonProblem2, lessonProblem3];
 
 const numbersEqual = (a: readonly number[], b: readonly number[]): boolean => {
   return a.length === b.length && a.every((_, i) => a[i] === b[i]);
