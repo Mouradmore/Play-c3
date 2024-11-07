@@ -295,7 +295,7 @@ const TileTooltip = ({
           </button>
         ) : (
           <Link
-            href="/lesson"
+            href="/lesson1"
             className="flex w-full items-center justify-center rounded-xl border-b-4 border-yellow-200 bg-white p-3 uppercase text-yellow-400"
           >
             Practice +5 XP
