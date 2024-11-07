@@ -211,7 +211,26 @@ const Lesson: NextPage = () => {
         />
       );
     }
-
+switch (problem.type) {
+    case "SELECT_1_OF_3": {
+      return (
+        <ProblemSelect1Of3
+          problem={problem}
+          correctAnswerCount={correctAnswerCount}
+          totalCorrectAnswersNeeded={totalCorrectAnswersNeeded}
+          selectedAnswer={selectedAnswer}
+          setSelectedAnswer={setSelectedAnswer}
+          quitMessageShown={quitMessageShown}
+          correctAnswerShown={correctAnswerShown}
+          setQuitMessageShown={setQuitMessageShown}
+          isAnswerCorrect={isAnswerCorrect}
+          onCheckAnswer={onCheckAnswer}
+          onFinish={onFinish}
+          onSkip={onSkip}
+          hearts={hearts}
+        />
+      );
+        }
     case "WRITE_IN_ENGLISH": {
       return (
         <ProblemWriteInEnglish
