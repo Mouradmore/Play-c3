@@ -31,15 +31,11 @@ const lessonProblem1 = {
 } as const;
 
 const lessonProblem2 = {
-  type: "SELECT_1_OF_3",
-  question: `Which one of these is "the apple"?`,
-  answers: [
-    { icon: <AppleSvg />, name: "la manzana" },
-    { icon: <BoySvg />, name: "el niño" },
-    { icon: <WomanSvg />, name: "la mujer" },
-  ],
-  correctAnswer: 1,
-} as const;  
+  type: "WRITE_IN_ENGLISH",
+  question: "El niño",
+  answerTiles: ["woman", "milk", "water", "I", "The", "boy"],
+  correctAnswer: [3, 5],
+} as const;
 
 const lessonProblem3 = {
   type: "WRITE_IN_ENGLISH",
@@ -93,7 +89,7 @@ const Lesson: NextPage = () => {
   const hearts =
     "fast-forward" in router.query &&
     !isNaN(Number(router.query["fast-forward"]))
-      ? 3 - incorrectAnswerCount
+      ? 5 - incorrectAnswerCount
       : null;
 
   const { correctAnswer } = problem;
@@ -211,26 +207,7 @@ const Lesson: NextPage = () => {
         />
       );
     }
-switch (problem.type) {
-    case "SELECT_1_OF_3": {
-      return (
-        <ProblemSelect1Of3
-          problem={problem}
-          correctAnswerCount={correctAnswerCount}
-          totalCorrectAnswersNeeded={totalCorrectAnswersNeeded}
-          selectedAnswer={selectedAnswer}
-          setSelectedAnswer={setSelectedAnswer}
-          quitMessageShown={quitMessageShown}
-          correctAnswerShown={correctAnswerShown}
-          setQuitMessageShown={setQuitMessageShown}
-          isAnswerCorrect={isAnswerCorrect}
-          onCheckAnswer={onCheckAnswer}
-          onFinish={onFinish}
-          onSkip={onSkip}
-          hearts={hearts}
-        />
-      );
-        }
+
     case "WRITE_IN_ENGLISH": {
       return (
         <ProblemWriteInEnglish
