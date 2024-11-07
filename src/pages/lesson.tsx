@@ -34,17 +34,10 @@ const lessonProblem2 = {
   type: "WRITE_IN_ENGLISH",
   question: "El niño",
   answerTiles: ["woman", "milk", "water", "I", "The", "boy"],
-  correctAnswer: [3, 5],
-} as const;
-
-const lessonProblem3 = {
-  type: "WRITE_IN_ENGLISH",
-  question: "El niño",
-  answerTiles: ["woman", "milk", "water", "I", "The", "boy"],
   correctAnswer: [4, 5],
 } as const;
 
-const lessonProblems = [lessonProblem1, lessonProblem2, lessonProblem3];
+const lessonProblems = [lessonProblem1, lessonProblem2];
 
 const numbersEqual = (a: readonly number[], b: readonly number[]): boolean => {
   return a.length === b.length && a.every((_, i) => a[i] === b[i]);
@@ -83,13 +76,13 @@ const Lesson: NextPage = () => {
 
   const problem = lessonProblems[lessonProblem] ?? lessonProblem1;
 
-  const totalCorrectAnswersNeeded = 3;
+  const totalCorrectAnswersNeeded = 2;
 
   const [isStartingLesson, setIsStartingLesson] = useState(true);
   const hearts =
     "fast-forward" in router.query &&
     !isNaN(Number(router.query["fast-forward"]))
-      ? 5 - incorrectAnswerCount
+      ? 3 - incorrectAnswerCount
       : null;
 
   const { correctAnswer } = problem;
