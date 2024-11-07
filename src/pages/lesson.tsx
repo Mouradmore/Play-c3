@@ -30,7 +30,7 @@ const lessonProblem1 = {
   correctAnswer: 0,
 } as const;
 
-const lessonProblem1 = {
+const lessonProblem2 = {
   type: "SELECT_1_OF_3",
   question: `Which one of these is "the apple"?`,
   answers: [
@@ -41,7 +41,7 @@ const lessonProblem1 = {
   correctAnswer: 1,
 } as const;  
 
-const lessonProblem2 = {
+const lessonProblem3 = {
   type: "WRITE_IN_ENGLISH",
   question: "El niño",
   answerTiles: ["woman", "milk", "water", "I", "The", "boy"],
@@ -87,7 +87,7 @@ const Lesson: NextPage = () => {
 
   const problem = lessonProblems[lessonProblem] ?? lessonProblem1;
 
-  const totalCorrectAnswersNeeded = 2;
+  const totalCorrectAnswersNeeded = 3;
 
   const [isStartingLesson, setIsStartingLesson] = useState(true);
   const hearts =
