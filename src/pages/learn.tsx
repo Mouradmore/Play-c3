@@ -278,7 +278,7 @@ const TileTooltip = ({
         </div>
         {status === "ACTIVE" ? (
           <Link
-            href="/play01"
+            href="/lesson"
             className={[
               "flex w-full items-center justify-center rounded-xl border-b-4 border-gray-200 bg-white p-3 uppercase",
               activeTextColor,
@@ -295,7 +295,7 @@ const TileTooltip = ({
           </button>
         ) : (
           <Link
-            href="/play01"
+            href="/lesson"
             className="flex w-full items-center justify-center rounded-xl border-b-4 border-yellow-200 bg-white p-3 uppercase text-yellow-400"
           >
             Practice +5 XP
@@ -393,7 +393,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
                               status === "LOCKED"
                             ) {
                               void router.push(
-                                `/lesson1?fast-forward=${unit.unitNumber}`,
+                                `/lesson?fast-forward=${unit.unitNumber}`,
                               );
                               return;
                             }
@@ -515,7 +515,7 @@ const Learn: NextPage = () => {
           ))}
           <div className="sticky bottom-28 left-0 right-0 flex items-end justify-between">
             <Link
-              href="/play01?practice"
+              href="/lesson?practice"
               className="absolute left-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-b-4 border-gray-200 bg-white transition hover:bg-gray-50 hover:brightness-90 md:left-0"
             >
               <span className="sr-only">Practice exercise</span>
@@ -630,7 +630,7 @@ const UnitHeader = ({
           <p className="text-lg">{description}</p>
         </div>
         <Link
-          href={`}`}
+          href={`https://duolingo.com/guidebook/${language.code}/${unitNumber}`}
           className={[
             "flex items-center gap-3 rounded-2xl border-2 border-b-4 p-3 transition hover:text-gray-100",
             borderColor,
