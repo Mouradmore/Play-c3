@@ -295,7 +295,7 @@ const TileTooltip = ({
           </button>
         ) : (
           <Link
-            href="/lesson1"
+            href="/lesson"
             className="flex w-full items-center justify-center rounded-xl border-b-4 border-yellow-200 bg-white p-3 uppercase text-yellow-400"
           >
             Practice +5 XP
@@ -341,9 +341,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
               {(() => {
                 switch (tile.type) {
                   case "star":
-                  case "book":
-                  case "dumbbell":
-                  case "trophy":
+                  
                   case "fast-forward":
                     if (tile.type === "trophy" && status === "COMPLETE") {
                       return (
