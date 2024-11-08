@@ -341,7 +341,9 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
               {(() => {
                 switch (tile.type) {
                   case "star":
-                  
+                  case "book":
+                  case "dumbbell":
+                  case "trophy":
                   case "fast-forward":
                     if (tile.type === "trophy" && status === "COMPLETE") {
                       return (
