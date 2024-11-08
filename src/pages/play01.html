@@ -1,0 +1,3332 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+<head>
+
+<title>InTexT English</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="description" content="Study French GCSE (old specification) on Vocabulary Testing Program 6." />
+<style>
+  @font-face {
+    font-family: Metropolitis;
+    font-weight: 100;
+    font-style: normal;
+    src: url("fonts/Metropolis-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 100;
+    font-style: italic;
+    src: url("fonts/Metropolis-ThinItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 200;
+    font-style: normal;
+    src: url("fonts/Metropolis-ExtraLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 200;
+    font-style: italic;
+    src: url("fonts/Metropolis-ExtraLightItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 300;
+    font-style: normal;
+    src: url("fonts/Metropolis-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 300;
+    font-style: italic;
+    src: url("fonts/Metropolis-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 400;
+    font-style: normal;
+    src: url("fonts/Metropolis-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 400;
+    font-style: italic;
+    src: url("fonts/Metropolis-RegularItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 500;
+    font-style: normal;
+    src: url("fonts/Metropolis-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 500;
+    font-style: italic;
+    src: url("fonts/Metropolis-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 600;
+    font-style: normal;
+    src: url("fonts/Metropolis-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 600;
+    font-style: italic;
+    src: url("fonts/Metropolis-SemiBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 700;
+    font-style: normal;
+    src: url("fonts/Metropolis-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 700;
+    font-style: italic;
+    src: url("fonts/Metropolis-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 800;
+    font-style: normal;
+    src: url("fonts/Metropolis-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolitis;
+    font-weight: 800;
+    font-style: italic;
+    src: url("fonts/Metropolis-ExtraBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: 200;
+    src: url("fonts/Manrope-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: 300;
+    src: url("fonts/Manrope-Light.ttf");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: 400;
+    src: url("fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: 500;
+    src: url("fonts/Manrope-Medium.ttf");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: 600;
+    src: url("fonts/Manrope-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: 700;
+    src: url("fonts/Manrope-Bold.ttf");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: 800;
+    src: url("fonts/Manrope-ExtraBold.ttf");
+}
+
+body {
+    font-family: Manrope, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Metropolitis, Helvetica, sans-serif;
+}
+</style>
+<style>
+  div#content {
+    position: absolute;
+    top: 150px;
+    width: calc(100% - 16px);
+}
+div#folders-flex {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div#units-flex {
+    width: 100%;
+    flex-wrap: wrap;
+}
+div.folders-flexbox {
+    display: flex;
+    width: calc(50% - 26px);
+    border-radius: 10px;
+    border: 3px solid;
+    margin: 10px;
+    text-align: center;
+    a.folders-link {
+        width: 100%;
+    }
+}
+
+div.folders-flexbox.disabled a.folders-link {
+    pointer-events: none;
+}
+
+div.units-flexbox {
+    display: flex;
+    width: calc((100% - 60px) / 3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px;
+    align-items: center;
+
+    input.folders-checkbox {
+        height: 25px;
+        width: 25px;
+        margin: 10px;
+    }
+
+    span.checkbox-label {
+        font-size: 25px;
+    }
+}
+
+div.units-flexbox:not(.no-border) {
+    outline: 2px solid;
+    border: 2px solid;
+    outline-offset: -2px;
+    transition: outline-width 200ms ease, outline-offset 200ms ease;
+}
+
+div.units-flexbox:not(.no-border):has(>input:checked) {
+    outline-width: 5px;
+    outline-offset: -5px;
+}
+
+div.units-flexbox.no-border {
+    width: 100%;
+}
+
+div#folders-custom {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: calc(50% - 34px);
+}
+
+button.start-button {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    margin: 20px;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 200ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 200ms cubic-bezier(0, 0, .2, 1) 0ms,
+                background-color 200ms linear, color 200ms linear, border-color 200ms linear;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+}
+
+button.start-button:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+    
+button.start-button:not(:disabled):hover {
+    background: #f6f9fe;
+    color: #174ea6;
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+    
+button.start-button:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+    
+button.start-button:not(:disabled):active {
+    outline: none;
+    transform: scale(0.9);
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+    
+button.start-button:disabled {
+    cursor: not-allowed;
+    background-color: light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+    color: light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+    border-color: light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+div#settings-bar {
+    padding: 20px;
+    padding-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+
+    label.switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin: 10px;
+    
+        input[type=checkbox] { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+          
+        span.slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 10px;
+        }
+          
+        span.slider::before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+          
+        input[type=checkbox]:checked + span.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+    }
+
+    p#help-tip {
+        display: block;
+    }
+
+    select#gamemode-selector {
+        border-radius: 10px;
+        height: 48px;
+        padding: 4px 20px 4px 8px;
+    }
+
+    span#high-score {
+        display: inline-block;
+    }
+}
+
+img.high-score-image {
+    content: url("img1/highscore.svg");
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+img.qf-high-score-image {
+    content: url("img1/highscore.svg");
+    height: 15px;
+    padding-left: 5px;
+}
+
+div#settings-bar * {
+    display: inline;
+    vertical-align: middle;
+}
+
+div#match-div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 90%;
+
+    div#timer-div {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+
+        button#restart-button {
+            position: absolute;
+            right: 16px;
+            margin: 0px;
+        }
+
+        button#share-button {
+            position: absolute;
+            left: 16px;
+            margin: 0px;
+        }
+    }
+
+    div.match-line-div {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        max-height: calc((100vh - 250px) / 6);
+        min-height: 75px;
+
+        div.match-text-div {
+            box-sizing: border-box;
+            width: calc(50% - 16px);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            transition: background-color 200ms linear;
+        }
+
+        div.match-text-div:active {
+            transform: scale(0.95);
+        }
+
+        div.match-text-div.done {
+            display: flex;
+            animation: correctMatch 500ms forwards;
+            padding: 0px;
+            max-height: calc((100vh - 200px) / 6);
+
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+
+        div.match-text-div.wrong {
+            animation: wrongMatch 500ms;
+        }
+    }
+}
+
+div#classic-div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+
+    div#progress-bar-div {
+        height: 25px;
+
+        * {
+            height: 25px;
+            display: inline-block;
+        }
+
+        div#progress-bar-container {
+            box-sizing: border-box;
+            width: calc(100% - 200px);
+            /* border: 2px solid; */
+            border-radius: 12.5px;
+            background: linear-gradient(to right, red 0%, yellow 50%, green 100%);
+
+            div#progress-bar {
+                float: right;
+                background-color: var(--other-colour);
+                width: 100%;
+            }
+        }
+
+        span#progress-bar-text {
+            float: right;
+            font-size: 20px;
+            padding-right: 10px;
+        }
+    }
+
+    input#classic-input {
+        font-size: 25px;
+        border: 3px solid;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    input#classic-input.correct {
+        animation: correctClassic 500ms;
+    }
+
+    input#classic-input.wrong {
+        animation: wrongClassic 500ms;
+    }
+
+    h1#classic-question {
+        text-align: center;
+        height: 48px;
+        margin: 50px 0px;
+
+        * {
+            vertical-align: middle;
+        }
+
+        span#classic-question-text {
+            line-height: 48px;
+        }
+
+        button#finish-button {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0px;
+        }
+
+        button#skip-button {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0px;
+        }
+    }
+
+    button#finish-button, button#finish-button2 {
+        float: right;
+    }
+
+    button#skip-button, button#skip-button2 {
+        float: left;
+    }
+
+    div#small-screen-button-row {
+        display: none;
+    }
+
+    p#typo-text {
+        text-align: center;
+        font-style: italic;
+
+        span.orange {
+            color: orange;
+        }
+
+        span.green {
+            color: #50c878;
+        }
+
+        span.red {
+            color: #ed4337;
+        }
+    }
+
+    button#square-finish-button {
+        display: none;
+    }
+
+    div#quickfire-timer-div {
+        text-align: center;
+    }
+}
+
+div#finish-div {
+    div#restart-button-div {
+        height: 100px;
+
+        button#classic-restart-button {
+            float: right;
+        }
+    }
+
+    table#wrong-table {
+        td, th {
+            text-align: left;
+            padding-right: 10px;
+            padding-top: 5px;
+        }
+    }
+
+    div#score-div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 999px) {
+    div.folders-flexbox {
+        width: calc(100% - 26px);
+    }
+
+    div#folders-custom {
+        margin-left: 10px;
+        transform: none;
+        width: calc(100% - 42px);
+    }
+
+    div#content {
+        top: 30px;
+    }
+
+    div.units-flexbox {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    div#content div#match-div div.match-line-div div.match-text-div {
+        text-size-adjust: auto;
+        text-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    div.match-line-div {
+        min-height: 50px;
+    }
+
+    div#classic-div {
+        h1#classic-question {
+            margin: 20px 0px;
+        }
+
+        h1#classic-question:not(.quickfire-question) {
+            font-size: 20px;
+        }
+
+        h1#classic-question.quickfire-question {
+            font-size: 26px;
+        }
+
+        button#finish-button, button#skip-button {
+            display: none;
+        }
+
+        button#square-finish-button {
+            display: inline;
+            margin: auto;
+            padding: 0px;
+            border-radius: 10px;
+            height: 45px;
+            width: 45px;
+            vertical-align: middle;
+            float: right;
+        }
+
+        input#classic-input:not(.quickfire-input) {
+            width: calc(100% - 75px);
+            vertical-align: middle;
+        }
+
+        img#finish-image {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    @media (max-height: 750px) {
+        div#classic-div h1#classic-question {
+            margin: 5px 0px;
+        }
+    }
+}
+
+@media (hover: none) {
+    div#content div#match-div div.match-line-div div.match-text-div:not(.selected):hover {
+        background-color: initial;
+    }
+}
+
+body.light-theme {
+    --green: #50c878;
+    
+    div.folders-flexbox {
+        border-color: #0093cb;
+    }
+
+    div.folders-flexbox:not(.disabled):hover {
+        background-color: #eeeeee;
+    }
+
+    div.folders-flexbox.disabled {
+        background-color: darkgray;
+    }
+
+    input.folders-checkbox {
+        accent-color: #0093cb;
+    }
+
+    div.units-flexbox {
+        outline-color: darkgray;
+        border-color: darkgray;
+    }
+
+    div.units-flexbox span.checkbox-label i {
+        color: darkgray;
+    }
+
+    div#settings-bar label.switch {
+        input[type=checkbox]:checked + span.slider {
+            background-color: #0093cb;
+        }
+        
+        input[type=checkbox]:focus + span.slider {
+            box-shadow: 0 0 1px #0093cb;
+        }
+    }
+
+    span.not-selected {
+        color: darkgray;
+    }
+
+    div.match-text-div {
+        border: 3px solid red;
+
+        img#folders-done-image {
+            content: url("img1/done-black.svg");
+        }
+    }
+
+    div.match-text-div:not(.selected):hover {
+        background-color: lightgray;
+    }
+
+    div.match-text-div.selected {
+        background-color: #0093cb;
+        color: beige;
+        border: 3px solid black;
+    }
+
+    div#progress-bar-container {
+        --other-colour: #ffffff;
+    }
+
+    img#finish-image {
+        content: url("img1/finish-light.svg");
+    }
+}
+
+body.dark-theme {
+    --green: green;
+
+    div.folders-flexbox {
+        border-color: #2a8c8c;
+    }
+
+    div.folders-flexbox:not(.disabled):hover {
+        background-color: #222222;
+    }
+
+    div.folders-flexbox.disabled {
+        background-color: #777777;
+    }
+
+    input.folders-checkbox {
+        accent-color: #2a8c8c;
+    }
+
+    div.units-flexbox {
+        border-color: lightgray;
+    }
+
+    div.units-flexbox span.checkbox-label i {
+        outline-color: lightgray;
+        color: lightgray;
+    }
+
+    div#settings-bar label.switch {
+        input[type=checkbox]:checked + span.slider {
+            background-color: #2a8c8c;
+        }
+        
+        input[type=checkbox]:focus + span.slider {
+            box-shadow: 0 0 1px #2a8c8c;
+        }
+
+        span.slider {
+            background-color: #444444;
+        }
+
+        span.slider:before {
+            background-color: lightgray;
+        }
+    }
+
+    span.not-selected {
+        color: #555555;
+    }
+
+    div#content {
+        button.start-button:not(:disabled) {
+            background-color: #2a8c8c;
+            color: #ffffff;
+        }
+
+        button.start-button:not(:disabled) {
+            box-shadow: rgba(255, 255, 255, .3) 0 1px 3px 0, rgba(255, 255, 255, .15) 0 4px 8px 3px;
+        }
+        
+        button.start-button:not(:disabled):hover {
+            background: #36b3b3;
+            color: beige;
+            box-shadow: rgba(255, 255, 255, .3) 0 2px 3px 0, rgba(255, 255, 255, .15) 0 6px 10px 4px;
+        }
+        
+        button.start-button:not(:disabled):focus {
+            box-shadow: rgba(255, 255, 255, .3) 0 1px 3px 0, rgba(255, 255, 255, .15) 0 4px 8px 3px;
+        }
+        
+        button.start-button:not(:disabled):active {
+            outline: none;
+            transform: scale(0.9);
+            box-shadow: rgba(255, 255, 255, .3) 0 4px 4px 0, rgba(255, 255, 255, .15) 0 8px 12px 6px;
+        }
+    }
+
+    div.match-text-div {
+        border: 3px solid white;
+
+        img#folders-done-image {
+            content: url("img1/done-white.svg");
+        }
+    }
+
+    div.match-text-div:not(.selected):hover {
+        background-color: #444444;
+    }
+
+    div.match-text-div.selected {
+        background-color: #2a8c8c;
+        color: beige;
+        border: 3px solid white;
+    }
+
+    div#settings-bar select#gamemode-selector {
+        background-color: #333333;
+        color: #e0f0f0;
+    }
+
+    div#classic-div {
+        div#progress-bar-div div#progress-bar-container {
+            --other-colour: #111111;
+        }
+
+        input#classic-input {
+            background-color: #111111;
+            border-color: white;
+            color: #e0f0f0;
+        }
+    }
+
+    img#finish-image {
+        content: url("img1/finish-dark.svg");
+    }
+}
+
+@keyframes correctMatch {
+    50% {
+        background-color: var(--green);
+    }
+    100% {
+        background-color: darkgray;
+    }
+}
+
+@keyframes wrongMatch {
+    50% {
+        background-color: #ed4337;
+    }
+    100% {
+        background-color: initial;
+    }
+}
+
+@keyframes correctClassic {
+    0% {
+        background-color: var(--green);
+    }
+    100% {
+        background-color: initial;
+    }
+}
+
+@keyframes wrongClassic {
+    0% {
+        background-color: #ed4337;
+    }
+    100% {
+        background-color: initial;
+    }
+}
+</style>
+<style>
+  :root {
+    scroll-behavior: smooth;
+}
+
+html:has(> body.dark-theme) {
+    scrollbar-color: lightgray #111111;
+}
+
+div#header {
+    height: 0px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+
+    * {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 30px;
+    }
+
+    img#banner-logo {
+        height: 100px;
+    }
+
+    a.banner-link {
+        /* font-style: italic; */
+        font-weight: 600;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 6px;
+    }
+
+    img#theme-button {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        cursor: pointer;
+        border: 2px solid red;
+        border-radius: 50px;
+    }
+
+    img#dropdown-arrow {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 20px;
+        left: 10px;
+    }
+
+    div#dropdown-container {
+        transition: transform 500ms ease-in-out;
+        transform: none;
+        position: absolute;
+        left: 0px;
+        top: 80px;
+
+        * {
+            display: block;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    div#dropdown-container.hidden {
+        transform: translateX(-100%);
+    }
+
+    a.centre {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+div#footer {
+    height: 1em;
+    width: calc(100% - 20px);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+div#cookie-banner {
+    width: calc(100% - 20px);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 10px;
+    animation: slideUp 1s ease-out;
+
+    input#cookie-button {
+        background-color: #00703c;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        border: 0px;
+    }
+}
+
+div#margin {
+    height: 50px;
+    width: 100%;
+}
+
+body.light-theme {
+    background-color: white;
+    color: black;
+
+    a.banner-link {
+        color: #0093cb;
+    }
+
+    a.banner-link:hover {
+        background-color: lightgray;
+        text-decoration: none;
+    }
+
+    div#header, div#footer {
+        background-color: white;
+    }
+
+    div#cookie-banner {
+        background-color: lightgray;
+
+        input#cookie-button {
+            background-color: #00703c;
+        }
+    }
+
+    img#dropdown-arrow {
+        content: url("img1/menu-light.svg");
+    }
+
+    img#dropdown-arrow.close-button {
+        content: url("img1/close-light.svg");
+    }
+
+    img#theme-button {
+        content: url("img1/dark.svg");
+    }
+
+    div#dropdown-container {
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    span.line {
+        border-color: black;
+    }
+}
+
+body.dark-theme {
+    background-color: #111111;
+    --main-colour: #e0f0f0;
+    color: var(--main-colour);
+    
+    a.banner-link {
+        color: #2a8c8c;
+    }
+
+    a.banner-link:hover {
+        background-color: #222222;
+        text-decoration: none;
+    }
+
+    div#header, div#footer {
+        background-color: #111111;
+    }
+
+    div#cookie-banner {
+        background-color: #2a8c8c;
+
+        input#cookie-button {
+            background-color: #128033;
+        }
+    }
+
+    img#dropdown-arrow {
+        content: url("img1/menu-dark.svg");
+    }
+
+    img#dropdown-arrow.close-button {
+        content: url("img1/close-dark.svg");
+    }
+
+    img#theme-button {
+        content: url("img1/light.svg");
+    }
+
+    div#dropdown-container {
+        background-color: #222222;
+        box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.1);
+    }
+
+    span.line {
+        border-color: var(--main-colour);
+    }
+}
+
+div.flex-container {
+    display: flex;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 16px);
+}
+
+span.line {
+    flex-grow: 1;
+    border-bottom: 1px solid;
+    margin: 5px
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes switchTheme {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideUp {
+    from {transform: translate(0, +100%);}
+    to {transform: none;}
+}
+
+@keyframes slideRight {
+    from {transform: translate(-100%, 0);}
+    to {transform: none;}
+}
+
+@keyframes enlarge {
+    from {height: 0%;}
+    to {height: 100%;}
+}
+
+@keyframes spin {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.no-underline {
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div id="header"></div>
+<div id="content">
+<div id="settings-bar">
+
+<select id="gamemode-selector"></select>
+<button class="start-button" id="start-button" role="button" disabled="true">Start!يبدأ</button>
+<span id="high-score">
+<img class="high-score-image" />
+<span id="high-score-text"></span>
+                </span>
+<p id="help-tip"></p>
+            </div>
+<div class="flex-container" id="units-flex">
+<div class="units-flexbox no-border" name="all">
+<input type="checkbox" class="folders-checkbox" />
+<span class="checkbox-label">All <i id="insert-length-here"></i></span></div></div>
+<div id="margin"></div>
+        </div>
+<div id="footer"></div>
+<script>
+            const TERMS_LIST = `# Part 1 كلمة
+this	هذا
+girl	بنت 
+Brother	اخ
+friend    	صديق
+family	عائلة 
+man	رجل 
+small	صغير
+beautiful   	جميل
+big كبيرة
+Large 	كبير
+strange غريب
+map  	خريطة
+proud 	فخور
+crazy   	مجنون
+life  حياة, 
+generous	كريمة
+Nice  	, ظريف
+happy  	سعيد
+unfair	غير منصف
+jealous  	غيور
+bad tempered	مزاج سيء
+naughty, شقي ، لئيم 
+lazy  	كسول
+annoying	مزعج
+sweet	حلو 
+sporty  	رياضي
+sister	, اخت 
+shy	خجول
+calm	, هدوء
+hard-working  	مجتهد
+sad	حزين
+elder  	زعيم
+love 	حب
+father	الآب
+mother	أم
+single	وحيد
+friend  	صديق, 
+brother	شقيق
+sister	شقيقة
+together	معا
+woman	  امرأة
+girl	  فتاة
+daughter  ابنة
+son	ابن
+grandmother	جدة
+grandfather	جد
+grandparents 	الجد والجدة
+husband	زوج
+dead  	الميت
+birthday	عيد ميلاد 
+kitchen  	مطبخ
+partner	شريك
+boyfriend	صديق لفتاة
+girlfriend	صديقة
+grand-daughter	حفيدة
+grandson	حفيد
+name	 اسم
+relationships 	علاقات
+separated  	منفصل
+aunt	عمة
+only	فقط
+sick	مريض 
+engagement 	خطوبة
+twin  	التوأم
+nephew	إبن الأخ أو الأ خت
+beard	لحية
+door    	باب
+hot    	ساخن
+point	 نقطة
+hair 	شعر
+clean  	نظيف
+cool   	بارد
+fat  	سمين
+young	شاب
+youth	شباب
+pretty  	 جميلة
+ugly 	قبيح
+short قصير 
+long	طويل
+glasses 	نظارات
+medium length	متوسط الطول
+Leave  	غادر
+Straight  مستقيم 
+medium height	ارتفاع متوسط
+old age	الشيخوخة
+new	جديد 
+eyes 	عيون
+Children	 اطفال 
+old	 قديم
+year  عام
+know	 أعرف 
+person  شخص
+argue	 تجادل
+discuss ناقش 
+tell	نقول 
+get on	  تابع
+single	 غير متزوج 
+friends	 أصدقاء
+spoil	 غنيمة
+anger	 غضب
+divorce	 طلاق 
+marry تزوج
+Tired  	متعب
+fed up سئمت
+despise	 احتقر
+get angry	 يغضب
+die	 مات
+be born	تولد
+share	 حصة
+go out	 اذهب للخارج
+subscribe	 أيد
+buy	 يشترى
+good 	جيد
+bad	سيء 
+question	سؤال 
+look for	 يبحث عن
+keyboard	لوحة مفاتيح
+click	 انقر
+account	حساب
+email 	بريد الكترونى
+dangerous  	خطير
+line	خط 
+screen 	شاشة
+controller 	جهاز تحكم 
+delete	 حذف
+online	على الانترنت
+record	 تسجيل
+send	 إرسال
+shop 	 تسوق
+file	ملف
+chat room	غرفة الدردشة
+printer 	آلة طابعة
+print	 طباعة
+drawback 	 عقبة
+internet user 	مستخدم الإنترنت
+Solid	صلب
+upload 	 رفع
+listen	استمع 
+password	كلمة المرور
+digital	رقمي
+computer 	الكمبيوتر
+laptop 	الكمبيوتر المحمول
+Home page	  الصفحة الرئيسية
+House	منزل 
+adverts	اعلانات
+job	 عمل 
+meet	 اجتماع
+social network	شبكة اجتماعية
+stay in contact	 ابق على اتصال
+save	 حفظ
+website  	موقع على الإنترنت
+mouse	فأر
+browser	 متصفح 
+tablet 	لوح
+type	 نوع
+chat, 	 دردشة 
+download	 التحميل
+text message, 	رسالة نصية
+key	مفتاح
+word  	كلمة
+
+# Part 2 كلمة
+basketball	كرة السلة
+centre 	 مركز
+horse	حصان
+start	 بداية
+run	 يجري
+race	سباق
+liberation	 تحرير
+Round 	 الجولة:
+rock 	 صخرة
+try	 حاول
+score a goal	   سجل هدفا
+swimming	سباحة
+address    	 عنوان
+excellent	 ممتاز
+account	  حساب
+Bathroom	 حمام
+wind  	ريح
+decade	عقد
+distribution	توزيع
+half 	 نصف
+winter  	 شتاء 
+measure	قياس
+tourism	سياحة
+sailing	إبحار
+volleyball	الكرة الطائرة
+news 	أخبار
+adolescent 	مراهق
+ticket	تذكرة
+song	أغنية
+riches	 الأغنياء
+singer   	مطرب
+cheese	جبنة
+youth club  	نادي الشباب
+games  	 ألعاب
+cartoon 	رسوم متحركة
+chess 	شطرنج
+special   	 خاص
+public 	 جمهور
+wood  	  خشب
+content	 محتوى
+bag	 كيس
+distance  	 مسافة
+close 	 إغالق
+nature	 طبيعة
+route 	   طريق
+encounter 	 مواجهة
+fox	ثعلب
+player 	 لاعب
+place	مكان
+hobby 	هواية
+phrase  	  عبارة
+copy 	  نسخ
+truth	 حقيقة
+confirm	تأكيد
+pain	ألم
+rejection 	 رفض
+free time 	وقت الفراغ
+fear	خوف
+star	 نجم
+mix	 خلط=مزج
+exchange	   تبادل
+push 	دفع
+garlic 	ثوم
+acid  	حامض
+pineapple 	أناناس
+tomorrow 	غدا
+dish 	  صحن
+weight	وزن
+cooking 	 طبخ
+butter	زبدة
+beef	لحم بقر
+card	 بطاقة
+drink	شرب
+duck	بط
+menu	قائمة الطعام
+cherry	كرز
+direct	مباشرة
+decide	 قرر
+cabbage	ملفوف
+chair	كرسي
+advantage	ميزة
+order	 طلب
+dark	 مظلم
+jam	مربى
+top	أعلى
+smart 	  ذكي
+direction	اتجاه
+water  	 ماء
+box 	صندوق
+total  	مجموع
+strawberry	فراولة
+raspberry	استهزاء
+seafood   	مأكولات بحرية
+ice cream	آيس كريم
+taste	 طعم
+green beans  	فاصوليا خضراء
+sensitivity 	حساسية
+ham	لحم خنزير
+milk	حليب
+vegetables 	خضراوات
+nut	جوز
+food	غذاء
+egg 	بيض
+onion 	بصل
+watermelon	بطيخ
+pasta 	معكرونة
+peas  	بازلاء
+spicy  	حار
+main meal	الوجبة الرئيسية
+pear	إجاص
+fruits	فواكه 
+pepper	فلفل
+apple	تفاحة
+potato  	بطاطا
+soup	حساء
+chicken	دجاج
+peach	خوخ
+plum	برقوق
+grape 	عنب
+meal	وجبة
+rice	أرز
+dates	تمور
+salmon	سمك السلمون
+salt	ملح
+waiter   	  نادل
+bean 	فاصوليا
+sugar	السكر
+cup	كأس
+tea	شاى
+tuna	تونة
+fish	سمك
+meat	لحم
+yoghurt	لبن خاثر
+veal	لحم العجل
+comment	 تعليق
+sun	 شمس 
+look forward to	 أتطلع إلى
+boring	ممل
+keep	 احتفظ
+consume	 استهلك
+continue	 واصل
+can	 يستطيع
+take	 يأخذ
+last	 آخر
+reserve 	   احتياطي
+celebrate	 يحتفل
+convey	نقل
+birthday	عيد الميلاد
+mosque	مسجد 
+planet	كوكب
+system 	  نظام 
+joke	نكتة
+about  	حول
+great  	 عظيم
+slow	 بطيء
+community	الجماعة
+pancake	فطيرة
+turkey	ديك رومي
+party	 حزب
+mother's day  	 يوم الأم
+important  	  مهم
+well  	 حسنا
+end	نهاية
+light	خفيف 
+removal	إزالة
+midnight  	 منتصف الليل
+reverse	عكس
+nothing	ولا شيء
+fun	مرح
+meeting	اجتماع
+valentine's day	عيد الحب
+new year's eve	ليلة رأس السنة
+form   شكل	 
+happen 	  حدث
+result  	 نتيجة
+present	حاضر
+circus	سيرك
+after	بعد
+less   	  أقل
+towards 	 باتجاه
+meal	وجبة
+late  	 متأخر
+tree	 شجرة
+street  	 شارع
+town 	مدينة
+marvellous	رائع
+population	عدد السكان
+muslim	مسلم
+offer	 عرض
+open	 فتح
+kill	قتل
+security	 األمن
+simple	 بسيطة
+rights 	  حقوق
+fail	 فشل
+chance	فرصة
+reserve	   احتاط
+voice	 صوت
+funny	مضحك
+follow	  اتابع 
+accept	 أقبل  
+director	  مدير
+relax 	 استرخى
+meet 	 اجتماع
+everyone  	كل واحد
+see	 شاهد
+food	 طعام
+moment	 لحظة
+have fun	 استمتع
+
+# Part 3 كلمة
+wardrobe 	خزانة
+closet	خزانة الثياب
+cellar	  قبو
+rain	مطر
+staircase 	درج
+storey 	طابق
+window	نافذة
+oven	فرن
+household	منزلي
+stair	سلم
+detached	منفصل
+code	رمز
+soldier	جندي
+furniture 	أثاث
+wall	جدار
+lawn	عشب أخضر
+room	غرفة
+ground floor	الطابق الأرضي
+dining room  	غرفة العشاء
+restaurant  	مطعم
+living room	غرفة المعيشه
+motor	محرك
+building	عمارة
+library	مكتبة
+roof	سقف
+panel  	لوحة
+butcher's	لجزار
+bakery	مخبز
+small 	   صغير
+centre 	 مركز
+town centre	وسط المدينة
+garden	حديقة
+knife	 سكين 
+responsibl 	مسؤولية
+police station	مركز شرطة
+marriage	الزواج
+exist 	يوجد
+capital	عاصمة
+college	 كلية
+david	 داود
+bus station 	موقف حافلة
+superstore 	متجر كبير
+embassy   	 سفارة
+jesus 	  عيسى
+state	دولة
+right	 يمين  
+share	مشاركة
+yard	 ساحة 
+aspect	جانب
+summer	صيف
+museum	متحف
+park	موقف
+cake	 كعكة
+square	مربع
+post office	مكتب البريد
+block	منع
+service statione	محطة خدمة
+significa	هام
+Journalistic 	صحفي 
+guard	حارس
+factory 	مصنع
+visit 	 زيارة
+black 	أسود
+jewellery	مجوهرات
+machine	آلة
+eat	يأكل
+hat	قبعة
+sock	جورب
+plan	خطة
+line	خط
+under	تحت
+company 	شركة
+number  	 عدد
+belt	حزام
+skirt	تنورة
+more	أكثر
+trousers	بنطلون
+glove	قفاز
+dress	فستان
+can  	يستطيع
+jacket	معطف
+clothes 	ملابس
+paper 	ورقة 
+they	 هم
+you	أنت
+bus   	 حافلة
+lock	قفل
+cheap 	رخيص
+year	سنة 
+noise	ضجيج
+saw	منشار
+till	حتى
+calm	هدوء
+countryside	ريف
+bank card 	بطاقة البنك
+famous	مشهور
+oust	طرد
+health	الصحة
+thing	شيء
+truck	شاحنة 
+setting	ضبط
+move	  تحرك
+sure	متأكد
+spider	 عنكبوت
+king	  ملك
+plane 	  طائرة
+season	  فصل
+traffic 	 حركة المرور
+breakfast 	فطور 
+hunger	 جوع 
+identity	هوية
+list	قائمة1
+flower	زهرة
+we 	نحن 
+he	 هو
+charge	  تهمة
+championship 	بطولة
+back	خلف
+wash	 غسل
+hammer	   مطرقة
+deliver	 نقل
+rent	إيجار
+shock	صدمة
+scent	  رائحة
+fashion	موضة
+mountain	 جبل
+quickly	 بسرعة
+shadow	 ظل
+perfume	عطر
+poor	فقير
+lose	 خسر
+Motorcycle 	 دراجة نارية 
+iron	حديد
+purse	محفظة
+inside	  داخل
+o'clock	   الساعة
+confirmation	تأكيد
+search	 بحث
+shoe	 حذاء
+tidy	 أنيق
+aisle	 ممر
+shorten	 اختصر
+reduced	مخفض
+station	 محطة 
+risk	خطر
+dirty	قذر
+safety	سلامة
+sales 	مبيعات
+crammed	مزدحم
+task	مهمة
+public transport  	 وسائل النقل العام
+nose	 أنف
+jail	  سجن
+tear   	 دمعة
+seller	 بائع
+life	حياة
+town	بلدة
+store	 متجر
+live	 يعيش
+neighbour	الجيران
+
+# Part 4 كلمة
+difference	اختلاف
+alcohol 	كحول
+discussion	مناقشة
+dog 	كلب
+easy 	  سهل
+everybody 	  الجميع
+everyone	 كل شخص
+everything 	  كل شيء
+evidence	دليل
+exist 	 يوجد
+expect	يتوقع
+factor	عامل
+advice	نصيحة
+hear	يسمع
+have 	يملك
+group	مجموعة
+great	عظيم
+depressed	مكتئب
+game	لعبة
+forget	 ينسى
+fall	 يسقط
+wrench	وجع
+final	نهائي
+floor	  أرضية
+first 	أول
+foot 	  قدم
+coach	  مدرب 
+training 	تدريب
+fly	  يطير
+beach	 شاطئ
+balanced	متوازن
+face	وجه
+she	 هي
+weak	ضعيف
+far  	    بعيدا
+sand	رمل
+liver	كبد
+sit	جلس
+net	شبكة
+ox	 ثور
+old	 قديم
+from	من
+strong 	قوي
+hungry 	  جائع
+to  	إلى
+before	قبل
+early	باكرا
+soon	قريبا
+sometimes  	أحيانا
+doctor	طبيب
+medicine	الدواء
+come	 يأتي 
+weight	الوزن
+daughter 	 ابنة
+skinny 	نحيف
+monkey	قرد
+air 	هواء
+every day	كل يوم
+give up	 استسلم
+lunch	غداء 
+island	 جزيرة
+weather	طقس
+spoon	ملعقة
+mirror	مرآة
+feel	 إحساس
+Orange	برتقال 
+blue	  أزرق
+care	رعاية
+Port 	ميناء
+sweet	حلوة
+statue	 تمثال
+tobacco	تبغ
+smoking	    تدخين
+cough	 سعال
+bridge 	 جسر
+fall	    خريف 
+finger	 اصبع اليد
+train 	  قطار 
+charity  	مؤسسة خيرية
+warn	 أنذر
+cowardly	جبان
+comma	 فاصلة
+point	 نقطة
+trade 	 تجارة
+criminal	مجرم
+moon	قمر 
+morning	 صباح 
+become	 أصبح
+hand  	 يد
+equality 	مساواة
+enquiry 	استفسار
+bat  	 خفاش 
+template	قالب
+fork 	شوكة
+sheep	خروف
+cow  	 بقرة 
+guest	    ضيف
+fine	 غرامة
+stay	 إقامة
+succeed	 نجح
+homeless   	 مشرد
+god	 الله
+tattoo	وشم
+smile	 ابتسامة
+rope 	 حبل 
+entry	 دخول
+better 	  أفضل
+empty	فارغ
+ship	سفينة
+
+# Part 5 كلمة
+welcome	 مرحبا
+commodity	سلعة
+nail   	 مسمار
+media  	 وسائل الإعلام
+slowly	ببطء
+heating 	 تدفئة
+grow	 زرع
+south	 جنوب
+rubbish 	قمامة
+destroy	 هدم
+disappear	 اختفى
+shower	دش
+environment 	بيئة
+driver	  سائق
+skin  	 جلد
+boat	 زورق
+flood 	فيضان
+away	  بعيدا
+remote 	عن بعد
+oil	نفط
+farm 	 مزرعة
+olive	زيتون 
+rubbish bin	سلة المهملات
+attack	 هجوم
+improve	 تحسن
+Screwdriver 	مفك براغي 
+increase	 زيادة
+subject	 موضوع
+where	  أين
+wait	انتظر
+accept	يقبل
+lie	 كذبة
+activity	نشاط
+level	مستوى
+peace	سلام
+landscape	  منظر جمالي
+complain	 يشتكي
+produce	 ينتج
+green  	 أخضر
+collect	  يجمع
+thank you	شكرًا لك
+refugee	لاجئ
+body 	     جسم
+eviction	  طرد
+board	سبورة
+class	فصل
+hole	ثقب
+wave	موجة
+finish	 نهاية
+hear	 سمع
+gang	عصابة
+Like	اعجاب 
+coal	فحم
+layer 	 طبقة
+believe	 صدق
+memory	ذاكرة
+myself   	 نفسي
+name	اسم
+next	التالي
+packaging 	تغليف
+only	 فقط
+damage	 ضرر
+energy  	 طاقة
+old 	 قديم
+cabbage	ملفوف
+speak 	تحدث
+today 	 اليوم
+wish 	 نتمنى
+war	حرب
+what	   ماذا 
+general	 عام/شامل
+immigrant 	مهاجر
+fire 	حريق
+fire	 نار
+glass	 كوب
+carpet 	سجادة
+driving licence 	رخصة قيادة
+zoo	  حديقة الحيوانات
+unknown	  مجهول
+basin 	حوض
+grass 	حشيش/عشب
+border	  حدود
+event	 حدث
+competition	 مسابقة
+little  	   قليل
+title	 عنوان
+listen 	   يستمع
+silver 	فضة
+gold	 دهب
+system	 نظام
+animal	  الحيوان
+comfortable	مريح
+speaks	 يتكلم
+balcony	  شرفة
+cheap	رخيص
+expensive	 غالي
+run	  يجري
+mouth	  فم
+teeth   	اسنان
+headache  	 صداع
+bitter	مر
+map 	خريطة 
+honey	 عسل 
+tomorrow	غداً 
+sentence	   جملة 
+criminal 	 مجرم
+story	قصة 
+be 	كان
+cry 	بكاء
+bird  	طائر
+How old?	كم عمره؟
+How far? 	 كم بعد 
+How long?	 كم طول
+How many 	  كم عدد
+How much?  	 كم ثمن
+when	  متى
+how	كيف
+let	    يترك
+send 	يرسل
+bottle	زجاجة
+cancel	 إلغاء
+party	حفل 
+north  	شمال 
+south	جنوب
+east  	 شرق
+west	 غرب
+friday	الجمعة 
+thursday	الخميس 
+wednesday	 الاربعاء 
+tuesday 	الثلاثاء 
+monday	الاثنين 
+sunday 	 الاحد 
+saturday	 السبت 
+yes   	 نعم
+with   	 مع
+wide 	واسع
+wife	 زوجة
+whose 	 لمن
+why	لماذا
+when	   متى
+white	 أبيض
+watch 	 يشاهد
+wear	   يلبس
+very 	جدًا
+wait   	   ينتظر 
+trade	تجارة
+trial	محاكمة
+these	  هؤلاء
+this 	هذا
+then	ثم
+there 	هناك
+that	ذلك
+them	 هم
+petrol  	 بنزين
+plan	 خطة
+meeting  	  اجتماع
+theme park	متنزه
+back	 الى الخلف
+thank  	 شكر
+tourism	 سياحة
+wake up 	استيقظ
+holiday   	عطلة
+visit 	زيارة
+program 	برنامج
+problem	مشكلة
+ready	جاهز
+quality  	 جودة
+way	طريق
+road	طريق
+red	أحمر
+sign	 إشارة
+side  	جانب
+site	موقع
+space	  فضاء
+plant   	 نبات
+possible 	  ممكن
+picture 	 صورة
+or  	 أو
+number	رقم
+note 	 ملاحظة
+not 	   ليس
+camping  	  تخييم
+cottage	 كوخ
+hotel	فندق
+rent	إيجار
+my	لي/ملكي
+tent	خيمة
+Mrs 	السيدة
+movie   	 فيلم
+Mr  	 السيد
+mouth   	فم
+model	نموذج
+mission	مهمة
+minute	 دقيقة
+island 	جزيرة
+lake	بحيرة
+low	منخفض
+look	 ينظر
+international  	دولي
+information   	 معلومات
+in   	في
+important 	   مهم
+abroad	خارج البلاد 
+imagine  	يتخيل
+image   	صورة
+identify  	 يحدد
+hundred	مئة
+world	عالم
+hour	ساعة
+hit    	يضرب
+hold	يمسك
+river	نهر
+high 	عالي
+heat  	حرارة
+
+# Par 6 كلمة
+German 	ألماني
+Chemistry	كيمياء
+art	فن
+teacher	معلم
+school 	مدرسة 
+spanish 	أسباني
+French	فرنسي
+learn 	 تعلم 
+language 	لغة 
+primary 	ابتدائي 
+book	كتاب 
+subject	موضوع
+Physics	فيزياء
+university,  	جامعة 
+money	 نقود
+sewing	خياطة
+modern  	 عصري
+citizen  	مواطن 
+head teacher	مدير المدرسة
+find out	 اكتشف
+calculator	آلة حاسبة
+secondary school	مدرسة اعدادية
+understand	 فهم
+share	حصة
+ask	 تطلب
+homework 	الفرض المنزلي
+difficulty	صعوبة
+qualification	المؤهل
+novel	 رواية
+lady	 سيدة
+rule	حكم
+city	 مدينة 
+airport	  مطار
+repeat	 يعيد
+reply	 رد
+result	نتيجة
+pass an exam	 اجتياز امتحان
+classroom  	قاعة الدراسة
+movies	 افلام 
+a plot of land	قطعة أرض 
+board	مجلس
+land  	 أرض
+word	كلمة
+found	 وجدت
+discuss	 نقاش
+Give	 منح /أعطى
+right	مستقيم
+especially  	 خاصة
+story  	 قصة
+pupil 	تلميذ
+timetable   	جدول مواعيد
+minor	  قاصر
+sky	 سماء 
+studies 	دراسات
+student 	طالب
+examination 	فحص
+Salary 	  راتب
+lesson	درس
+reading	قراءة
+read	 قرأ
+make-up	مكياج
+mark	علامة
+forget	 ينسى
+exam  	   امتحان
+stop	 توقف
+think	 فكر
+permit	   تصريح
+wear	  ارتداء
+pressure	الضغط
+break-time	وقت الاستراحة
+Hospital	  مستشفى  
+hall 	قاعة
+school report 	تقرير المدرسة
+school bus 	باص المدرسة
+corridor	ممر
+talented  gifted	موهوب
+fail	 فشل
+female 	انثى 
+insult 	إهانة
+style 	 نمط
+nursery school	الحضانة
+repeat the year	 إعادة السنة
+detention	احتجاز
+year  	 عام
+apprentice	مبتدئ
+spring 	ربيع 
+Need  	 احتاج 
+want  	 اريد  
+level	مستوى
+adviser 	 مستشار
+week	اسبوع 
+day	يوم
+test 	اختبار
+building 	 مبنى
+library 	مكتبه 
+study	 دراسة
+month,  	  شهر 
+train	 قطار
+heart 	 قلب 
+freedom	حرية
+future	مستقبل 
+people	  الناس
+work	 عمل
+there	هناك 
+watching 	 يشاهد
+vocation 	 مهنة
+police  	شرطة
+future 	مستقبل
+lawyer	محام
+butcher   	جزار
+baker   	خباز
+post	منصب
+candidate	مرشح
+office   	مكتب
+barber   	حلاق
+commerce	تجارة
+count 	 إحصاء 
+law	القانون
+employee	موظف
+employer	صاحب العمل
+date	 تاريخ 
+postman   	ساعي البريد
+farmer   	مزارع
+victory	   انتصار
+idea 	فكرة
+nurse  	ممرضة
+place  	مكان
+engineer  	مهندسة
+newspaper	صحيفة
+Silver 	 فضة
+builder 	معماري
+mechanic   	الميكانيكي
+doctor	طبيب
+medicine	الدواء
+save money    	 يدخر مال
+section   	قسم 
+time 	 وقت
+size   	حجم 
+police officer   	ضابط شرطة
+price	سعر 
+sleeping	 ينام 
+receive	 استقبل
+varied  	متنوع
+veterinarian 	طبيب بيطري
+gets up	يستيقظ
+summer	الصيف
+accountant 	محاسب
+travel 	سفر
+occasion	 مناسبة
+maybe	ربما
+Thank    	 شكرا
+available	متوفرة
+widen	 وسع
+project 	مشروع
+interview 	مقابلة
+help  	مساعدة
+hope 	أمل
+translator 	مترجم
+tool 	أداة
+just 	  فقط `;
+            const NUM_UNITS = 12;
+            const OPTIONS = {lang: "fr", id: "fr8658", name: "French GCSE", all: false};
+        </script>
+<script>
+  function get_cookies() {
+    let str = document.cookie.split(";");
+    let d = {};
+    for (i = 0; i < str.length; i++) {
+      if (str[i] === "") continue;
+      let c = str[i].split("=");
+      d[c[0].trim()] = c[1].trim();
+    }
+    return d;
+  }
+  
+  function switch_theme() {
+    document.body.style.animation = "";
+    document.body.offsetWidth;
+    document.body.style.animation = "switchTheme 1s";
+    if (theme === "light") {
+      theme = "dark";
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
+      document.cookie = "vtp6Theme=dark;domain=vtp6.rujulnayak.com;path=/;max-age=31536000";
+    } else {
+      theme = "light";
+      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light-theme");
+      document.cookie = "vtp6Theme=light;domain=vtp6.rujulnayak.com;path=/;max-age=31536000";
+    }
+  }
+  
+  let theme = get_cookies()["vtp6Theme"];
+  
+  if (theme === undefined || theme === "light") {
+    theme = "light";
+    document.body.classList.add("light-theme");
+  } else {
+    theme = "dark";
+    document.body.classList.add("dark-theme");
+  }
+</script>
+<script>
+  let header_version = -1;
+  
+  function add_header() {
+    let screen_width = window.innerWidth;
+  
+    if (screen_width >= 1000 && header_version !== 0) {
+      document.getElementById("header").innerHTML = `
+              <a href="/"></a>
+
+          `;
+  
+      header_version = 0;
+  
+      document.getElementById("theme-button").addEventListener("click", switch_theme);
+  
+    } else if (screen_width < 1000 && header_version !== 1) {
+      document.getElementById("header").innerHTML = `
+              <p id="dropdown-arrow"/>
+             
+              <img id="theme-button"/></p>
+          `;
+  
+      let dropdown_container = document.getElementById("dropdown-container");
+  
+      document.getElementById("dropdown-arrow").addEventListener("click", () => {
+        if ([...dropdown_container.classList].includes("hidden")) {
+          dropdown_container.classList.remove("hidden");
+          document.getElementById("dropdown-arrow").classList.add("close-button");
+        } else {
+          dropdown_container.classList.add("hidden");
+          document.getElementById("dropdown-arrow").classList.remove("close-button");
+        }
+      });
+  
+      header_version = 1;
+  
+      document.getElementById("theme-button").addEventListener("click", switch_theme);
+    }
+  }
+  
+  add_header();
+  window.addEventListener("resize", add_header);
+</script>
+
+<script>
+  document.getElementById("footer").innerHTML =
+    `&copy InTexT English 2024-` + ("" + new Date().getFullYear()).slice(-2) +
+    ` `;
+</script>
+<script>
+  /**
+ * Tests a condition and outputs an error message if false.
+ * @param {Boolean} condition Condition to test.
+ * @param {String} message Error message if failed.
+ * @returns {Boolean} The value of `condition`.
+ */
+function assert(condition, message) {
+    if (!condition) return!! console.error("ERROR! " + message);
+    return true;
+}
+
+/**
+ * Replaces potentially harmful characters in a string of text
+ * with their HTML character reference equivalents,
+ * so that the returned text can be used as an element's innerHTML.
+ * @param {String} string The text to sanitise.
+ * @returns {String} The sanitised string.
+ */
+function sanitise(string) {
+    return string
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+}
+
+/**
+ * Equivalent of Python's `sum` function
+ * (returns the total of the elements of an array)
+ * @param {Number[]} arr The array to sum.
+ * @returns {Number} The sum of the array.
+ */
+function sum(arr) {
+    return arr.reduce((b, a) => b + a, 0);
+}
+
+/**
+ * Similar to Python's `list.remove` function
+ * (removes the first instance of an element from an array,
+ *  modifying the array in place and returning the removed element)
+ * @param {Any[]} arr The array to remove an element from.
+ * @param {Any} elem The element to remove from the array.
+ * @returns {Any} The element that was removed from the array.
+ */
+function remove(arr, elem) {
+    arr.splice(arr.indexOf(elem), 1);
+    return elem;
+}
+
+/**
+ * Equivalent of Python's `random.randint` function
+ * (returns a pseudo-random integer between `a` and `b` inclusive)
+ * @param {Number} a Lower bound.
+ * @param {Number} b Upper bound.
+ * @returns {Number} Random integer between `a` and `b` inclusive.
+ */
+function randint(a, b) {
+    return a + Math.floor(Math.random() * (b + 1 - a));
+}
+
+/**
+ * Equivalent of Python's `random.choice` function
+ * (returns a pseudo-random element from a given array)
+ * @param {Any[]} arr The array to choose an item from.
+ * @returns {Any} A random element from the given array.
+ */
+function random_choice(arr) {
+    return arr[randint(0, arr.length - 1)];
+}
+
+/**
+ * Equivalent of Python's `random.sample` function
+ * (returns `k` pseudo-random elements from `arr`)
+ * @param {Any[]} arr The array to choose items from.
+ * @param {Number} k The number of items to choose.
+ * @returns {Any[]} A random subset of `arr` with length `k`.
+ */
+function random_sample(arr, k) {
+    ret = [];
+    while (k-- > 0) ret.push(remove(arr, random_choice(arr)));
+    return ret;
+}
+
+/**
+ * Similar to Python's `random.shuffle` function
+ * (returns a pseudo-random permutation of a given array)
+ * @param {Any[]} arr The array to shuffle.
+ * @returns {Any[]} A random permutation of `a`.
+ */
+function random_shuffle(arr) {
+    return random_sample(arr, arr.length);
+}
+
+/**
+ * Equivalent of Python's `zip` function
+ * (transposes a 2D array of arrays)
+ * @param {...Any[]} arrs Arrays to transpose.
+ * @returns {Any[][]} The transposed 2D array.
+ */
+function zip(...arrs) {
+    return arrs[0].map((_, i) => arrs.map(r => r[i]));
+}
+
+/**
+ * Equivalent of Python's `str.title` function
+ * (converts a string to title case)
+ * @param {String} str The string to convert to title case.
+ * @returns {String} The title-cased string.
+ */
+function title_case(str) {
+    return str.replace(/\w\S*/g, (text) =>
+        text.charAt(0).toUpperCase() + text.substring(1).toLowerCase()
+    );
+}
+
+/**
+ * Keeps only alphanumeric characters in a given string
+ * @param {String} str The string to remove punctuation from.
+ * @returns {String} The alphanumeric string.
+ */
+function remove_punctuation(string) {
+    return [...string]
+        .map((c) => {
+            let ord = c.charCodeAt(0);
+            return (
+                (47 < ord && ord < 58) || 
+                (64 < ord && ord < 91) || 
+                (96 < ord && ord < 123)
+                || (ord > 127)) ? c : "";
+            }
+        ).join("");
+}
+
+/**
+ * Expands parentheses (needed for input parsing)
+ * - this is the helper function
+ * @param {String} str The input string.
+ * @returns {[String[], Number]} A list of options, and an index.
+ */
+function expand_parens_helper(str) {
+    let ret = [""];
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i]
+        if (char === "(") {
+            let [lst, j] = expand_parens_helper(str.slice(i + 1));
+            ret.push(...ret.map(s => lst.map(t => s + t)).flat());
+            i += j + 1
+        } else if (char === ")") {
+            return [ret, i];
+        } else {
+            ret = ret.map(s => s + char);
+        }
+    };
+    return [ret, str.length - 1];
+}
+
+/**
+ * Expands parentheses (needed for input parsing)
+ * - this is the interface function
+ * @param {String} str The input string.
+ * @returns {String[]} A list of options.
+ */
+function expand_parens(str) {
+    return expand_parens_helper(str)[0]
+}
+
+/**
+ * Returns the next integer after `n` which is equal
+ * to itself when rounded to 1 significant figure,
+ * and not a single-digit number (i.e. it is a digit
+ * followed by a positive number of 0s, meaning that
+ * it matches the regular expression pattern /\^d0+$/g)
+ * @param {Number} n A non-negative input integer.
+ * @returns {Number} The next round number greater than `n`.
+ */
+function next_round_number(n) {
+    while (++n) {
+        if (/^\d0+$/g.test(n)) return n;
+    }
+}
+
+/**
+ * Given a number and a string, returns the concatenated
+ * string, pluralising the string if `n !== 1`
+ * @param {Number} n The number.
+ * @param {String} s The singular string (if `n === 1`).
+ * @param {String | undefined} p The plural string (if `n !== 1`).
+ * NOTE: This is optional: if not given, it defaults to `s + "s"`.
+ * @returns {String} The concatenated string.
+ */
+function pluralise(n, s, p=undefined) {
+    if (p === undefined) p = s + "s";
+    return `${n}${n === 1 ? s : p}`;
+}
+
+/**
+ * Equivalent to the Python code `[*arr] == [*{*arr}]`
+ * (checks if an array contains unique values)
+ * @param {Any[]} arr The array to check the uniqueness of.
+ * @returns {Boolean} If the array is unique.
+ */
+function is_unique(arr) {
+    return arr.every((v, i, a) => a.indexOf(v) === i);
+}
+</script>
+<script>
+  let units = TERMS_LIST.split("\n\n");
+
+const uflex = document.getElementById("units-flex");
+
+let total = 0;
+
+units = units.map((unit, uindex) => {
+    let [unit_header, ...urest] = unit.split("\n");
+    if (!assert(unit_header.startsWith("# "),
+        "Header " + uindex + " not in proper format.")) return;
+    unit_name = unit_header.slice(2);
+    unit_varname = unit_name.toLowerCase().replaceAll(" ", "");
+    let unit_terms = urest.map((uline, ulindex) => {
+        let uret = uline.split("\t");
+        if (assert(uret.length === 2,
+            "Line not in proper format in " +
+            unit_name + " (line " + ulindex + ").")
+        ) return uret;
+    }).filter(l => l !== undefined);
+    let uflexbox = document.createElement("div");
+    uflexbox.classList.add("units-flexbox");
+    uflexbox.setAttribute("name", unit_varname);
+    uflexbox.innerHTML = `
+        <input type="checkbox" class="folders-checkbox" />
+        <span class="checkbox-label">${unit_name} <i>(${unit_terms.length})</i></span>`;
+    uflex.appendChild(uflexbox);
+    total += unit_terms.length;
+    return [[unit_name, unit_varname], unit_terms];
+});
+
+assert(is_unique(units.map(l => l[0][1])), "Headers are not unique.");
+
+document.getElementById("insert-length-here").innerHTML = "(" + total + " كلمة)";
+
+</script>
+<script>
+  let units_flexboxes = [...document.querySelectorAll("div.units-flexbox")];
+  
+  let [unit_all, ...unit_checkboxes] = [...document.querySelectorAll(`input.folders-checkbox`)];
+  
+  units_flexboxes.forEach(flexbox => {
+    flexbox.addEventListener("click", (event) => {
+      let target = event.target;
+      if (target.nodeName === "INPUT") return;
+      while (target.nodeName !== "DIV") target = target.parentElement;
+      let checkbox = target.querySelector(`input[type="checkbox"]`);
+      console.log(checkbox);
+      checkbox.checked = !checkbox.checked;
+      change_all_box(checkbox);
+    }, true);
+  });
+  
+  [...unit_checkboxes, unit_all].forEach(checkbox => {
+    checkbox.addEventListener("input", (event) => {
+      change_all_box(event.target);
+    });
+  });
+  
+  function change_all_box(ubox) {
+    if (ubox === unit_all) {
+      unit_checkboxes.forEach(ucbox => ucbox.checked = unit_all.checked);
+    } else {
+      unit_all.checked = unit_checkboxes.every(box => box.checked);
+    }
+    document.getElementById("start-button").disabled = !unit_checkboxes.some(box => box.checked);
+  }
+  
+  document.addEventListener("keydown", (event) => {
+    if ((event.ctrlKey || event.metaKey) && event.key === "a") {
+      event.preventDefault();
+      unit_all.checked = true;
+      change_all_box(unit_all);
+    }
+  });
+  
+
+  
+  const GAME_MODE_DESCRIPTIONS = {
+    match: "طابق المصطلحات الموجودة على اليسار بالتعريفات الموجودة على اليمين في أسرع وقت ممكن.",
+    quick_fire: ""
+  }
+  
+  let gms = document.getElementById("gamemode-selector");
+  
+  Object.keys(GAME_MODE_DESCRIPTIONS).forEach(key => {
+    let optn = document.createElement("option");
+    optn.value = key;
+    optn.innerHTML = title_case(key.replaceAll("_", " "));
+    gms.appendChild(optn);
+  });
+  
+  function update_help_tip() {
+    document.getElementById("help-tip").innerHTML =
+      ``;
+    let high_score = get_cookies()[`vtp6HighScore_` + gms.value];
+    if (high_score !== undefined) {
+      document.getElementById("high-score-text").innerHTML = high_score;
+    } else {
+      document.getElementById("high-score-text").innerHTML = "";
+    }
+  }
+  
+  gms.addEventListener("input", update_help_tip);
+  
+  update_help_tip();
+</script>
+<script>
+  // NOTE: because Quick Fire and Classic share a lot of features,
+// the code behind Quick Fire mode was added to this file instead
+// of a separate folders-quickfire.js
+
+let full_terms_list = [];
+let randomised_terms = [];
+
+let [question, answer] = ["", ""];
+
+let split_answer = [];
+
+let textbox = undefined;
+
+let correct = 0;
+let wrong = 0;
+
+let wrongtbl = [];
+
+let quickfire_timer = 150;
+let quickfire_timer_id = 0;
+let quickfire_increment = 30;
+
+const THRESHOLD = 0.2; // 80% typo detection threshold
+
+function set_progress_bar_background(val) {
+    document.getElementById("progress-bar")
+        .style.width = `${100 - val}%`;
+}
+
+function new_question() {
+    [question, answer] = randomised_terms.shift();
+    document.getElementById("classic-question-text").innerHTML = sanitise(question);
+
+    split_answer = answer.toLowerCase().split(",")
+        .map(str => str.split("/")).flat()
+        .map(expand_parens);
+
+    if (OPTIONS["all"]) document.getElementById("classic-question-text").innerHTML +=
+        ` (<span id="classic-all-num">0</span>/${split_answer.length})`;
+
+    if (randomised_terms.length === 0) randomised_terms = random_shuffle(full_terms_list);
+
+    textbox.focus();
+}
+
+function update_bar_text() {
+    let total = correct + wrong;
+    let percentage = correct / total * 100;
+    document.getElementById("progress-bar-text").innerHTML =
+        `${correct}/${total} (${percentage.toPrecision(3)}%)`;
+    set_progress_bar_background(percentage);
+}
+
+function check_input(value) {
+    let unpunctuated = remove_punctuation(value.toLowerCase());
+    textbox.value = "";
+
+    let typo_p = document.getElementById("typo-text");
+
+    let typo = typo_p.innerHTML === `<span class="orange">Typo?</span> Try again.`;
+    typo_p.innerHTML = "&nbsp;";
+
+    let rickroll = [            // Hey there!
+        "thonnu",               // 
+        "thunno",               // You're looking at the code
+        "rujul",                // behind rickrolls on VTP6.
+        "rujulnayak",           // 
+        "vtp",                  // Enter any of these keywords
+        "vtp6",                 // into the input box on VTP6,
+        "rick",                 // and you will be redirected
+        "rickroll",             // to a rickroll (link below).
+        "rickrollme",           // 
+        "nevergonnagiveyouup",  // Try it out at your own risk.
+    ];
+
+    if (rickroll.includes(unpunctuated))
+        return window.open(
+            "https://youtu.be/xvFZjo5PgG0", // This is the link.
+        "_blank").focus();
+
+    if (split_answer.some(lst =>
+        lst.map(remove_punctuation).includes(unpunctuated))
+    ) return true;
+
+    if (typo) return false;
+
+    if (split_answer.flat().some(s => {
+        let ans = levDist(remove_punctuation(s), unpunctuated) /
+            remove_punctuation(s).length;
+        console.log(ans);
+        return ans <= THRESHOLD;
+    })) {
+        textbox.value = value;
+        typo_p.innerHTML = `<span class="orange">Typo?</span> Try again.`;
+        return undefined;
+    }
+
+    return false;
+}
+
+function check_input_classic() {
+    let result = check_input(userans = textbox.value);
+
+    if (result === undefined) return;
+
+    textbox.classList.remove("correct");
+    textbox.classList.remove("wrong");
+    textbox.offsetWidth;
+
+    if (OPTIONS["all"]) {
+        if (result) {
+            textbox.classList.add("correct");
+            split_answer = split_answer.filter(l =>
+                !l.map(remove_punctuation)
+                .includes(remove_punctuation(userans))
+            );
+            if (split_answer.length === 0) {
+                correct++;
+                document.getElementById("typo-text").innerHTML = `
+                    <span class="green">Correct!</span>
+                `;
+                new_question();
+            } else {
+                let n = document.getElementById("classic-all-num");
+                n.innerHTML = +n.innerHTML + 1;
+                document.getElementById("typo-text").innerHTML = `
+                    <span class="green">Keep going!</span>
+                `;
+            }
+        } else {
+            wrong++;
+            textbox.classList.add("wrong");
+            document.getElementById("typo-text").innerHTML = `
+                <span class="red">خاطئ:</span>
+                ${answer}
+            `;
+            wrongtbl.push([question, answer, userans]);
+            new_question();
+        }
+    } else {
+        if (result) {
+            correct++;
+            textbox.classList.add("correct");
+            document.getElementById("typo-text").innerHTML = `
+                <span class="green">صحيح!</span>
+            `;
+        } else {
+            wrong++;
+            textbox.classList.add("wrong");
+            document.getElementById("typo-text").innerHTML = `
+                <span class="red">خاطئ:</span>
+                ${answer}
+            `;
+            wrongtbl.push([question, answer, userans]);
+        }
+        new_question();
+    }
+    update_bar_text();
+}
+
+function check_input_quickfire() {
+    let result = check_input(userans = textbox.value);
+
+    if (result === undefined) return;
+
+    textbox.classList.remove("correct");
+    textbox.classList.remove("wrong");
+    textbox.offsetWidth;
+
+    if (OPTIONS["all"]) {
+        if (result) {
+            textbox.classList.add("correct");
+            split_answer = split_answer.filter(l =>
+                !l.map(remove_punctuation)
+                .includes(remove_punctuation(userans))
+            );
+            if (split_answer.length === 0) {
+                correct++;
+                document.getElementById("typo-text").innerHTML = `
+                    <span class="green">صحيح!</span>
+                `;
+                new_question();
+                quickfire_timer += quickfire_increment;
+                quickfire_increment = Math.max(quickfire_increment - 2, 5);
+            } else {
+                let n = document.getElementById("classic-all-num");
+                n.innerHTML = +n.innerHTML + 1;
+                document.getElementById("typo-text").innerHTML = `
+                    <span class="green">Keep going!</span>
+                `;
+            }
+        } else {
+            wrong++;
+            textbox.classList.add("wrong");
+            document.getElementById("typo-text").innerHTML = `
+                <span class="red">خاطئ:</span>
+                ${answer}
+            `;
+            wrongtbl.push([question, answer, userans]);
+            new_question();
+        }
+    } else {
+        if (result) {
+            correct++;
+            textbox.classList.add("correct");
+            document.getElementById("typo-text").innerHTML = `
+                <span class="green">صحيح!</span>
+            `;
+            quickfire_timer += quickfire_increment;
+            quickfire_increment = Math.max(quickfire_increment - 2, 5);
+        } else {
+            wrong++;
+            textbox.classList.add("wrong");
+            document.getElementById("typo-text").innerHTML = `
+                <span class="red">خاطئ:</span>
+                ${answer}
+            `;
+            wrongtbl.push([question, answer, userans]);
+        }
+        new_question();
+    }
+}
+
+function finish_classic_game() {
+    let nrn = next_round_number(correct + wrong);
+    let left = nrn - correct - wrong;
+    if (window.confirm(
+        "Are you completely sure you want to finish the game?" +
+        (left < Math.max((correct + wrong) / 10, 10) ?
+            `\n\nOnly ${pluralise(left, " more question")} ` +
+            `to go until you have completed ${nrn} questions.`
+        : "")
+    )) {
+        document.getElementById("classic-div").remove();
+        let finish_div = document.createElement("div");
+        finish_div.innerHTML = `
+            <div id="score-div">
+                <h3>${correct}/${correct + wrong} (${(correct / ((correct + wrong) || 1) * 100).toPrecision(3)}%)</h3>
+            </div>
+            <div id="restart-button-div">
+                <button class="start-button" id="classic-restart-button">Restart!</button>
+            </div>
+            <table id="wrong-table">
+                <tr>
+                    <th>Term</th>
+                    <th>Definition</th>
+                    <th>Your&nbsp;Answer</th>
+                </tr>
+            </table>
+        `;
+        finish_div.id = "finish-div";
+        document.getElementById("content")
+            .insertBefore(finish_div, document.getElementById("margin"));
+
+        wrongtbl.forEach(row => {
+            let [a, b, c] = row;
+            let tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${a}</td> <td>${b}</td>
+                <td><em>${c}</em></td>
+            `;
+            document.getElementById("wrong-table").appendChild(tr);
+        });
+
+        document.getElementById("classic-restart-button")
+            .addEventListener("click", () => {
+                document.getElementById("finish-div").remove();
+                document.getElementById("settings-bar").hidden = false;
+                document.getElementById("units-flex").style.display = "flex";
+
+                full_terms_list = [];
+                randomised_terms = [];
+
+                [question, answer] = ["", ""];
+
+                split_answer = [];
+
+                textbox = undefined;
+
+                correct = 0;
+                wrong = 0;
+
+                wrongtbl = [];
+
+                quickfire_timer = 150;
+                quickfire_timer_id = 0;
+                quickfire_increment = 30;
+            });
+    }
+}
+
+function set_quickfire_high_score(score) {
+    let currenths = get_cookies()["vtp6HighScore_quick_fire"];
+    if (currenths === undefined || score > +currenths) {
+        document.cookie =
+            `vtp6HighScore_quick_fire=${score};` +
+            `domain=vtp6.rujulnayak.com;path=/;max-age=31536000`;
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function finish_quickfire_game() {
+    clearInterval(quickfire_timer_id);
+
+    document.getElementById("classic-div").remove();
+
+    let high_score = set_quickfire_high_score(correct);
+
+    let finish_div = document.createElement("div");
+    finish_div.innerHTML = `
+        <div id="score-div">
+            <h3>Your score was ${high_score ? `<img class="qf-high-score-image" />` : ""} ${correct}</h3>
+        </div>
+        <div id="restart-button-div">
+            <button class="start-button" id="classic-restart-button">Restart!</button>
+        </div>
+        <table id="wrong-table">
+            <tr>
+                <th>Term</th>
+                <th>Definition</th>
+                <th>Your&nbsp;Answer</th>
+            </tr>
+        </table>
+    `;
+    finish_div.id = "finish-div";
+    document.getElementById("content")
+        .insertBefore(finish_div, document.getElementById("margin"));
+
+    wrongtbl.forEach(row => {
+        let [a, b, c] = row;
+        let tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${a}</td> <td>${b}</td>
+            <td><em>${c}</em></td>
+        `;
+        document.getElementById("wrong-table").appendChild(tr);
+    });
+
+    document.getElementById("classic-restart-button")
+        .addEventListener("click", () => {
+            document.getElementById("finish-div").remove();
+            document.getElementById("settings-bar").hidden = false;
+            document.getElementById("units-flex").style.display = "flex";
+
+            full_terms_list = [];
+            randomised_terms = [];
+
+            [question, answer] = ["", ""];
+
+            split_answer = [];
+
+            textbox = undefined;
+
+            correct = 0;
+            wrong = 0;
+
+            wrongtbl = [];
+
+            quickfire_timer = 150;
+            quickfire_timer_id = 0;
+            quickfire_increment = 30;
+        });
+}
+
+function folders_start_classic(terms) {
+    full_terms_list = [...terms];
+    randomised_terms = random_shuffle(terms);
+
+    let classic_div = document.createElement("div");
+    classic_div.innerHTML = `
+        <div id="progress-bar-div">
+            <div id="progress-bar-container"><div id="progress-bar"></div></div>
+            <span id="progress-bar-text">0/0 (0.00%)</span>
+        </div>
+        <h1 id="classic-question">
+            <button class="start-button" id="skip-button">Skip &rarr;</button>
+            <span id="classic-question-text"></span>
+            <button class="start-button" id="finish-button">Finish!</button>
+        </h1>
+        <div id="input-div">
+            <input type="text" id="classic-input"
+                placeholder="Type the definition here..."
+                autocomplete="off" autocorrect="off"
+                spellcheck="false" />
+            <button class="start-button" id="square-finish-button"><img id="finish-image" /></button>
+        </div>
+        <p id="typo-text">&nbsp;</p>
+    `;
+    classic_div.id = "classic-div";
+    document.getElementById("content")
+        .insertBefore(classic_div, document.getElementById("margin"));
+
+    textbox = document.getElementById("classic-input");
+
+    document.getElementById("skip-button").addEventListener("click", () =>
+        (textbox.value = "") || check_input_classic()
+    );
+
+    document.getElementById("finish-button").addEventListener("click", finish_classic_game);
+    document.getElementById("square-finish-button").addEventListener("click", finish_classic_game);
+
+    textbox.addEventListener("keyup", ({ key }) => {
+        if (key === "Enter") {
+            check_input_classic();
+        }
+    });
+
+    window.scrollTo(0, 0);
+    new_question();
+}
+
+function folders_start_quickfire(terms) {
+    full_terms_list = [...terms];
+    randomised_terms = random_shuffle(terms);
+
+    let classic_div = document.createElement("div");
+    classic_div.innerHTML = `
+        <div id="quickfire-timer-div">
+            <h3 id="quickfire-timer">&nbsp;</h3>
+        </div>
+        <h1 id="classic-question" class="quickfire-question">
+            <span id="classic-question-text" class="quickfire-question-text"></span>
+        </h1>
+        <div id="input-div">
+            <input type="text" id="classic-input" class="quickfire-input"
+                placeholder="Type the definition here..."
+                autocomplete="off" autocorrect="off"
+                spellcheck="false" />
+        </div>
+        <p id="typo-text">&nbsp;</p>
+    `;
+    classic_div.id = "classic-div";
+    document.getElementById("content")
+        .insertBefore(classic_div, document.getElementById("margin"));
+
+    if (OPTIONS["all"]) quickfire_timer = 250;
+    document.getElementById("quickfire-timer").innerText = (quickfire_timer / 10).toFixed(1) + "s";
+
+    textbox = document.getElementById("classic-input");
+
+    textbox.addEventListener("keyup", ({ key }) => {
+        if (key === "Enter") {
+            check_input_quickfire();
+        }
+    });
+
+    quickfire_timer_id = setInterval(() => {
+        document.getElementById("quickfire-timer").innerText =
+            (--quickfire_timer / 10).toFixed(1) + "s";
+        if (quickfire_timer <= 0) finish_quickfire_game();
+    }, 100);
+
+    window.scrollTo(0, 0);
+    new_question();
+}
+
+
+// https://stackoverflow.com/a/11958496 by James Westgate
+function levDist(s, t) {
+    let d = [];
+
+    let n = s.length;
+    let m = t.length;
+
+    if (n == 0) return m;
+    if (m == 0) return n;
+
+    for (let i = n; i >= 0; i--) d[i] = [];
+
+    for (let i = n; i >= 0; i--) d[i][0] = i;
+    for (let j = m; j >= 0; j--) d[0][j] = j;
+
+    for (let i = 1; i <= n; i++) {
+        let s_i = s.charAt(i - 1);
+
+        for (let j = 1; j <= m; j++) {
+
+            if (i == j && d[i][j] > 4) return n;
+
+            let t_j = t.charAt(j - 1);
+            let cost = (s_i == t_j) ? 0 : 1;
+
+            let mi = d[i - 1][j] + 1;
+            let b = d[i][j - 1] + 1;
+            let c = d[i - 1][j - 1] + cost;
+
+            if (b < mi) mi = b;
+            if (c < mi) mi = c;
+
+            d[i][j] = mi;
+
+            if (i > 1 && j > 1 && s_i == t.charAt(j - 2) && s.charAt(i - 2) == t_j) {
+                d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + cost);
+            }
+        }
+    }
+
+    return d[n][m];
+}
+
+</script>
+<script>
+  let match_sample = [];
+let match_pairs = [];
+
+let match_selections = [undefined, undefined];
+let match_texts = [undefined, undefined];
+
+let match_time = 0;
+let match_timer_id = 0;
+
+let completed_pairs = 0;
+
+function folders_start_match(terms) {
+    match_sample = random_sample(terms, 7);
+
+    let match_div = document.createElement("div");
+    match_div.id = "match-div";
+    document.getElementById("content")
+        .insertBefore(match_div, document.getElementById("margin"));
+
+    timer_div = document.createElement("div");
+    timer_div.id = "timer-div";
+    timer_div.innerHTML = `<span id="timer-text">0.0s</span>`;
+    match_div.appendChild(timer_div);
+
+    match_timer_id = setInterval(() => {
+        document.getElementById("timer-text").innerText =
+            (++match_time / 10).toFixed(1) + "s";
+    }, 100);
+    
+    match_pairs = zip(
+        random_shuffle(match_sample.map(a => a[0])),
+        random_shuffle(match_sample.map(b => b[1]))
+    );
+
+    match_pairs.forEach((pair, i) => {
+        let line_div = document.createElement("div");
+        line_div.classList.add("match-line-div");
+        pair.forEach((s, j) => {
+            let text_div = document.createElement("div");
+            text_div.classList.add("match-text-div");
+            text_div.id = "match-text-div-" + i + "-" + j;
+            text_div.innerHTML = sanitise(s).replaceAll("(", "").replaceAll(")", "");
+            line_div.appendChild(text_div);
+            text_div.addEventListener("click", folders_match_input);
+        });
+        match_div.appendChild(line_div);
+    });
+
+    window.scrollTo(0, document.body.scrollHeight);
+}
+
+function folders_match_input(event) {
+    let elem = event.target;
+    if ([...elem.classList].includes("done")) return;
+    let srcid = elem.id.split("-");
+    let [x, y] = srcid.slice(srcid.length - 2);
+    match_texts[+y] = match_pairs[+x][+y];
+    let prev_selection = match_selections[+y];
+    if (prev_selection === elem) {
+        elem.classList.remove("selected");
+        match_selections[+y] = undefined;
+    } else {
+        if (prev_selection !== undefined)
+            prev_selection.classList.remove("selected");
+        elem.classList.add("selected");
+        match_selections[+y] = elem;
+    }
+    if (match_selections[0] !== undefined
+        && match_selections[1] !== undefined)
+            folders_match_check_input();
+}
+
+function folders_match_check_input() {
+    match_selections.forEach((element, index) => {
+        element.classList.remove("wrong");
+        element.classList.remove("selected");
+        if (match_sample.map(JSON.stringify).includes(JSON.stringify(match_texts))) {
+            element.classList.add("done");
+            element.innerHTML =
+                `<img id="folders-done-image" height="${element.offsetHeight / 2}px" />`;
+            if (index === 0) completed_pairs++;
+        } else {
+            element.classList.remove("wrong");
+            element.offsetHeight;
+            element.classList.add("wrong");
+            match_time += 5;
+        }
+    });
+    match_selections = [undefined, undefined];
+    if (completed_pairs === 6) {
+        clearInterval(match_timer_id);
+        window.scrollTo(0, 0);
+        let temp_string = "";
+        if (set_match_high_score(match_time / 10))
+            temp_string = ` <img class="high-score-image" /> `;
+        update_help_tip();
+        document.getElementById("timer-div").innerHTML =
+            `<button class="start-button" id="share-button" role="button">Share!</button>` +
+            temp_string + document.getElementById("timer-div").innerHTML + temp_string +
+            `<button class="start-button" id="restart-button" role="button">Restart!</button>`;
+        document.getElementById("restart-button").addEventListener("click", () => {
+            document.getElementById("match-div").remove();
+            document.getElementById("settings-bar").hidden = false;
+            document.getElementById("units-flex").style.display = "flex";
+            
+            match_sample = [];
+            match_pairs = [];
+
+            match_selections = [undefined, undefined];
+            match_texts = [undefined, undefined];
+
+            match_time = 0;
+            match_timer_id = 0;
+
+            completed_pairs = 0;
+        });
+        document.getElementById("share-button").addEventListener("click", () => {
+            let link = document.createElement("a");
+            link.download = "vtp6-match.png";
+            link.href = create_match_image();
+            link.click();
+            if (navigator.share) {
+                navigator.share({
+                    title: "VTP6 Match",
+                    text: `I completed ${OPTIONS["name"]} Match mode in ${(match_time / 10).toFixed(1)}s on VTP6. ` +
+                    `\nCan you beat me? Try it here: ${location.href}`
+                });
+            }
+        });
+    }
+}
+
+function create_match_image() {
+    let cnv = document.createElement("canvas");
+    cnv.width = cnv.height = 2000;
+    let ctx = cnv.getContext("2d");
+    ctx.textAlign = "center";
+
+    ctx.fillStyle = "#111111";
+    ctx.fillRect(0, 0, cnv.width, cnv.height);
+
+    ctx.font = "120px Metropolitis";
+    ctx.fillStyle = "#2a8c8c";
+    ctx.fillText("Vocabulary Testing Program 6", cnv.width / 2, 200);
+
+    ctx.font = "250px Metropolitis";
+    ctx.fillStyle = "#8c2a8c"
+    ctx.fillText((match_time / 10).toFixed(1) + "s", cnv.width / 2, 1000);
+
+    ctx.font = "50px Manrope";
+    ctx.fillStyle = "#e0f0f0";
+    ctx.fillText("vtp6.rujulnayak.com", cnv.width / 2, 1950);
+
+    ctx.font = "80px Manrope";
+    ctx.fillText("I completed " + OPTIONS["name"] + " Match mode in", cnv.width / 2, 700);
+
+    ctx.font = "100px Manrope"
+    ctx.fillStyle = "orange";
+    ctx.fillText("Can you beat me?", cnv.width / 2, 1500);
+
+    let data = cnv.toDataURL('image/png');
+    return data;
+}
+
+function set_match_high_score(score) {
+    let currenths = get_cookies()["vtp6HighScore_match"];
+    if (currenths === undefined || score < +currenths.slice(0, -1)) {
+        document.cookie =
+            `vtp6HighScore_match=${score.toFixed(1)}s;` +
+            `domain=vtp6.rujulnayak.com;path=/;max-age=31536000`;
+        return true;
+    } else {
+        return false;
+    }
+}
+</script>
+<script>
+  function folders_start_game() {
+    document.getElementById("settings-bar").hidden = true;
+    document.getElementById("units-flex").style.display = "none";
+  
+    // game_mode = document.getElementById("gamemode-checkbox").checked ? "match" : "classic";
+    game_mode = document.getElementById("gamemode-selector").value;
+  
+    let selected_units = [...
+          document.getElementById("units-flex")
+          .querySelectorAll("input[type=checkbox]:checked")
+      ].map((inputbox) => inputbox.parentElement.getAttribute("name"));
+  
+    let selected_terms = units.filter(
+      lst => selected_units.includes(lst[0][1])
+    ).map(arr => arr[1]).flat();
+  
+    if (game_mode === "classic") {
+      folders_start_classic(selected_terms);
+    } else if (game_mode === "match") {
+      folders_start_match(selected_terms);
+    } else if (game_mode === "quick_fire") {
+      folders_start_quickfire(selected_terms);
+    }
+  }
+  
+  document.getElementById("start-button").addEventListener("click", folders_start_game);
+</script>
+<script async data-id="101454906" src="//static.getclicky.com/js"></script>
+    </body>
+</html>
