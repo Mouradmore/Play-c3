@@ -21,24 +21,20 @@ import { useRouter } from "next/router";
 
 const lessonProblem1 = {
   type: "SELECT_1_OF_3",
-  question: `أي واحد من هؤلاء"التفاحة"?`,
+  question: `أي واحد من هؤلاء هو "the apple"?`,
   answers: [
-    { icon: <AppleSvg />, name: "Apple" },
-    { icon: <BoySvg />, name: "Boy" },
-    { icon: <WomanSvg />, name: "woman" },
+    { icon: <AppleSvg />, name: "التفاحة" },
+    { icon: <BoySvg />, name: "الصبي" },
+    { icon: <WomanSvg />, name: "المرأة" },
   ],
   correctAnswer: 0,
 } as const;
 
-const lessonProblem1 = {
-  type: "SELECT_1_OF_3",
-  question: `أي واحد من هؤلاء"التفاحة"?`,
-  answers: [
-    { icon: <AppleSvg />, name: "Apple" },
-    { icon: <BoySvg />, name: "Boy" },
-    { icon: <WomanSvg />, name: "woman" },
-  ],
-  correctAnswer: 0,
+const lessonProblem2 = {
+  type: "WRITE_IN_ENGLISH",
+  question: "El niño",
+  answerTiles: ["woman", "milk", "water", "I", "The", "boy"],
+  correctAnswer: [4, 5],
 } as const;
 
 const lessonProblems = [lessonProblem1, lessonProblem2];
@@ -204,15 +200,15 @@ const Lesson: NextPage = () => {
         />
       );
     }
-switch (problem.type) {
-  case "SELECT_1_OF_3": {
-    return (
-      <ProblemSelect1Of3
+
+    case "WRITE_IN_ENGLISH": {
+      return (
+        <ProblemWriteInEnglish
           problem={problem}
           correctAnswerCount={correctAnswerCount}
           totalCorrectAnswersNeeded={totalCorrectAnswersNeeded}
-          selectedAnswer={selectedAnswer}
-          setSelectedAnswer={setSelectedAnswer}
+          selectedAnswers={selectedAnswers}
+          setSelectedAnswers={setSelectedAnswers}
           quitMessageShown={quitMessageShown}
           correctAnswerShown={correctAnswerShown}
           setQuitMessageShown={setQuitMessageShown}
@@ -222,9 +218,8 @@ switch (problem.type) {
           onSkip={onSkip}
           hearts={hearts}
         />
-    );
-  }
-}
+      );
+    }
   }
 };
 
@@ -568,7 +563,7 @@ const ProblemWriteInEnglish = ({
         </div>
         <section className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24">
           <h1 className="mb-2 text-2xl font-bold sm:text-3xl">
-            اكتب هذا باللغة الإنجليزية
+            Write this in English
           </h1>
 
           <div className="w-full">
