@@ -50,10 +50,9 @@ const lessonProblem3 = {
 
 const lessonProblems = [lessonProblem1, lessonProblem2, lessonProblem2];
 
-const numbersEqual = (a: readonly number[], b: readonly number[]): boolean => {
-  return a.length === b.length && a.every((_, i) => a[i] === b[i]);
+const numbersEqual = (a: readonly number[], b: readonly number[], c: readonly number[]): boolean => {
+  return a.length === b.length === c.length && a.every((_, i) => a[i] === b[i] === c[i]);
 };
-
 const formatTime = (timeMs: number): string => {
   const seconds = Math.floor(timeMs / 1000) % 60;
   const minutes = Math.floor(timeMs / 1000 / 60) % 60;
